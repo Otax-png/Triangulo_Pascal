@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.container{
+    display: grid;
+    justify-items: center;
+    height: 100vh;
+    grid-template: 80px 1fr / 1fr;
+    gap: 5px;
+    grid-template-areas: "header"
+                         "main";
+}
+
+.header{
+    grid-area: header;
+    align-content: start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #07255c;
+    padding-left: 250px;
+}
+.container picture{
+    height: 80%;
+}
+.container span{
+    margin-left: 10px;
+    font-size: 50px;
+    color: white;
+}
+.container picture img{
+
+    height: inherit;
+}
+
+.main{
+    grid-area: main;
+    height: 50%;
+    text-align: center;
+}
